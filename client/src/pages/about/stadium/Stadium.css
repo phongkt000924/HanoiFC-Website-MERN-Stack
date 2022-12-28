@@ -1,0 +1,35 @@
+.stadium {
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.stadium__image {
+  padding-bottom: 2rem;
+}
+
+.stadium__content p {
+  text-align: justify;
+  color: var(--textColorWhite);
+}
+
+.stadium__info {
+  padding: 0 18rem 2rem;
+}
+
+.stadium__avatar {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+
+@media screen and (max-width: 1024px) {
+  .stadium__info {
+    padding: 0 10rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stadium__info {
+    padding: 0 0 2rem;
+  }
+}

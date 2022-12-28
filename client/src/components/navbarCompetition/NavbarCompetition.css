@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.competition__section-head {
+  padding: 2rem 0.5rem 1rem;
+}
+
+.competition__section-head-nav {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.competition__section-head-nav ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.competition__section-head-nav ul li:hover {
+  cursor: pointer;
+}
+
+.competition__section-head-nav ul li .active::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #3c2387;
+  width: 100%;
+  content: "";
+}
+
+.competition__section-head-nav ul li span {
+  color: #3c2387;
+  font-size: 14pt;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+
+.competition__section-head-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 4rem 0;
+}
+
+.competition__section-head-title .title {
+  font-size: 2.5rem;
+  display: block;
+  text-transform: uppercase;
+  color: #411e8c;
+  padding: 1rem 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .competition__section-head {
+    padding-bottom: 2rem;
+  }
+
+  .competition__section-head-nav {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .competition__section-head-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .competition__section-head-nav ul li {
+    margin-right: 0;
+  }
+
+  .competition__section-head-nav ul li span {
+    font-size: 16pt;
+  }
+
+  .competition__section-head-content {
+    display: block;
+  }
+
+  .competition__section-head-title {
+    text-align: center;
+  }
+
+  .competition__section-head-title .title {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .competition__section-head {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .competition__section-head-nav {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .competition__section-head-nav ul {
+    display: flex;
+  }
+
+  .competition__section-head-nav ul li:first-child {
+    margin-right: 1.9rem;
+  }
+
+  .competition__section-head-nav ul li {
+    margin-right: 0;
+  }
+
+  .competition__section-head-nav ul li span {
+    font-size: 12pt;
+  }
+
+  .competition__section-head-content {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .competition__section-head-title .title {
+    margin-left: 0.5rem;
+    text-align: center;
+  }
+}

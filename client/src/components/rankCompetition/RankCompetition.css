@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.competition__section-rank {
+  color: #212529;
+  text-transform: uppercase;
+  padding: 0 0.25rem;
+}
+
+.competition__section-rank-select {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  margin-top: -5.3rem;
+  margin-right: 4rem;
+}
+
+.competition__section-rank-select select {
+  font-size: 16px;
+  border: 1px solid #cad4da;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.competition__section-rank-select option {
+  display: grid;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  margin: 0.3rem 0;
+  color: #495057;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #cad4da;
+  background-color: var(--textColorWhite);
+  border-radius: 0.2rem;
+}
+
+.competition__section-rank-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.competition__section-rank-table th {
+  padding: 0.75rem;
+}
+
+.competition__section-rank-table thead th {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.competition__section-rank-normal {
+  display: block;
+}
+
+.competition__section-rank-mobile {
+  display: none;
+}
+
+.competition__section-rank-table tbody tr:first-child {
+  background-color: #ffca05;
+}
+
+.competition__section-rank-table tbody tr:first-child th {
+  border-bottom: 0;
+}
+
+.competition__section-rank-table tbody tr:first-child th:nth-child(8) {
+  background-color: #ffca05;
+}
+
+.competition__section-rank-table tbody th {
+  font-weight: 400;
+  vertical-align: middle;
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.competition__section-rank-table tbody tr th:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.competition__section-rank-table tbody tr th:nth-child(2) img {
+  width: 40px;
+  margin-right: 2rem;
+}
+
+.competition__section-rank-point {
+  background-color: #eee;
+}
+
+.competition__section-rank-match {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #9aa0a6;
+  border-radius: 100%;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  font-size: 8pt;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  margin: 0 0.15rem;
+  font-size: 8pt;
+}
+
+.competition__section-rank-match svg {
+  color: #f8f9fa;
+  font-size: 8pt;
+}
+
+.win {
+  background-color: #3aa757;
+}
+
+.lose {
+  background-color: #ea4335;
+}
+
+@media screen and (max-width: 1024px) {
+  .competition__section-rank-select {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    margin-right: 0;
+  }
+
+  .competition__section-rank-normal {
+    display: none;
+  }
+
+  .competition__section-rank-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .competition__section-rank-select {
+    margin-bottom: 1rem;
+  }
+
+  .competition__section-rank-table thead tr th:last-child,
+  .competition__section-rank-table tbody tr th:last-child {
+    display: none;
+  }
+
+  .competition__section-rank-table tbody tr th:nth-child(2) img {
+    display: none;
+  }
+
+  .competition__section-rank-table tbody tr th:nth-child(2) span {
+    text-align: left;
+  }
+
+  .competition__section-rank-table th {
+    padding: 0.5rem;
+  }
+
+  .competition__section-rank-normal {
+    display: none;
+  }
+
+  .competition__section-rank-mobile {
+    display: block;
+  }
+}

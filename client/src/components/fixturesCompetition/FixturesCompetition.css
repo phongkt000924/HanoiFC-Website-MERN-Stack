@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.competition__section-fixtures {
+  border-top: 4px solid #c7c8ca;
+}
+
+.competition__section-fixtures-select {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  margin-top: -5.7rem;
+  margin-right: 4rem;
+}
+
+.competition__section-fixtures-select select {
+  font-size: 16px;
+  border: 1px solid #cad4da;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.competition__section-fixtures-select option {
+  display: grid;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  margin: 0.3rem 0;
+  color: #495057;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #cad4da;
+  background-color: var(--textColorWhite);
+  border-radius: 0.2rem;
+}
+
+.competition__section-fixture-row {
+  border-bottom: 1px solid #c6c7c9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.competition__section-fixture-col--schedule {
+  border-right: 1px solid #c6c7c9;
+  padding: 1.25rem;
+  width: 32%;
+}
+
+.competition__section-fixture-col--schedule-logo,
+.competition__section-fixture-col--schedule-info {
+  padding: 0 10px;
+}
+
+.competition__section-fixture-col--schedule-logo img {
+  max-height: 30px;
+  width: auto;
+}
+
+.competition__section-fixture-col--schedule-info {
+  text-align: center;
+  color: #000;
+  line-height: 1.2;
+  font-size: 11pt;
+}
+
+.competition__section-fixture-col--schedule-info p:nth-child(2) {
+  font-weight: 700;
+}
+
+.competition__section-fixture-col--competitor {
+  display: flex;
+  width: 100%;
+}
+
+.competition__section-fixture-col--competitor--left {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.competition__section-fixture-col--competitor--right {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 40%;
+  justify-content: flex-start;
+}
+
+.competition__section-fixture-col--competitor--left img,
+.competition__section-fixture-col--competitor--right img {
+  height: 43px;
+  width: auto;
+  padding: 0 10px;
+}
+
+.competition__section-fixture-col--competitor--left p {
+  text-align: right;
+}
+
+.competition__section-fixture-col--competitor--left p,
+.competition__section-fixture-col--competitor--right p {
+  font-size: 13pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: #000;
+}
+
+.competition__section-fixture-col--competitor--center {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+}
+
+.competition__section-fixture-col--competitor--center span {
+  color: #301c93;
+  font-size: 2.75rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+.competition__section-fixture-col--result {
+  text-align: right;
+}
+
+.competition__section-fixture-col--result span,
+.btn-show-toggle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-show-toggle {
+  border-color: #ddd;
+  background-color: #fff;
+  color: #343a40;
+  margin-left: 1.25rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.btn-show-toggle:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1024px) {
+  .competition__section-fixtures-select {
+    justify-content: space-around;
+    margin-bottom: 0.9rem;
+    margin-top: -3.4rem;
+    margin-right: 0;
+  }
+
+  .competition__section-fixture-col--schedule {
+    padding: 1rem;
+  }
+
+  .competition__section-fixture-col--schedule-info {
+    padding-left: 0;
+  }
+
+  .competition__section-fixture-col--competitor {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .competition__section-fixture-col--competitor--left,
+  .competition__section-fixture-col--competitor--right {
+    padding: 0;
+  }
+
+  .competition__section-fixture-col--result {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .competition__section-fixture-col--schedule {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .competition__section-fixture-row {
+    display: block;
+  }
+
+  .competition__section-fixture-col--competitor {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .competition__section-fixture-col--result {
+    display: none;
+  }
+
+  .competition__section-fixture-col--competitor--left,
+  .competition__section-fixture-col--competitor--right {
+    padding: 0;
+  }
+}

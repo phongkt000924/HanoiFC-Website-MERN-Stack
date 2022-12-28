@@ -1,0 +1,129 @@
+.testimonials {
+  margin-inline: auto;
+}
+
+.testimonials__container {
+  padding: 2rem 0 1rem;
+}
+
+.testimonials__head {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.testimonial {
+  display: flex;
+  margin-top: 2rem;
+  background: var(--textColorWhite);
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-radius: 1.5rem;
+
+}
+
+.testimonial__info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.testimonial__avatar {
+  flex: 1;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  transition: var(--transition);
+  width: auto;
+}
+
+.textimonial__avatar img {
+  width: auto;
+}
+
+.testimonial:hover .testimonial__avatar {
+    border-radius: 50%;
+    border-color: var(--textColorSecondary);
+}
+
+.testimonial__quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #9d9fa2;
+}
+
+.testimonial__job {
+  margin-bottom: 1rem;
+  color: var(--bgColorPrimary);
+}
+
+.testimonials__btn-container {
+  width: fit-content;
+  margin: 1rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonials__btn {
+  background: transparent;
+  cursor: pointer;
+}
+
+.testimonials__btn svg {
+  fill: var(--textColorWhite);
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
+  transition: var(--transition);
+}
+
+.testimonials__btn:hover svg {
+  fill: var(--textColorSecondary);
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    width: 75%;
+  }
+
+  .testimonials__head {
+    font-size: 3rem;
+  }
+
+  .testimonial {
+    display: block;
+  }
+  .testimonial__quote {
+    margin-bottom: 0;
+  }
+
+  .testimonial__job {
+    margin-bottom: 0;
+  }
+
+  .testimonial:hover .testimonial__avatar {
+    border-radius: 1.5rem;
+    border-color: var(--textColorWhite);
+}
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials {
+    width: 100%;
+  }
+  .testimonial {
+    border: 5px solid var(--textColorSecondary);
+  }
+
+  .testimonial__info {
+    margin-left: 1.27rem;
+  }
+}

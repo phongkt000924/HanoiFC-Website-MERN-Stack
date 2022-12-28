@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.competition__section-detailsfixtures {
+  background-color: #411e8c;
+}
+
+.competition__section-detailsfixture-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.competition__section-detailsfixture-col--schedule {
+  padding: 1.25rem;
+}
+
+.competition__section-detailsfixture-col--schedule-logo,
+.competition__section-detailsfixture-col--schedule-info {
+  padding: 0 10px;
+}
+
+.competition__section-detailsfixture-col--schedule-info {
+  color: #fff;
+  line-height: 1.2;
+  font-size: 11pt;
+}
+
+.competition__section-detailsfixture-col--schedule-info p:nth-child(2) {
+  font-weight: 700;
+}
+
+.competition__section-detailsfixture-col--competitor {
+  padding: 1rem 0;
+}
+
+.competition__section-detailsfixture-row--competitor-top {
+  display: flex;
+  align-items: center;
+}
+
+.competition__section-detailsfixture-row--competitor-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.competition__section-detailsfixture-col--competitor--left
+  .competition__section-detailsfixture-row--competition--left-bottom {
+  align-items: flex-start;
+}
+
+.competition__section-detailsfixture-col--competitor--left img,
+.competition__section-detailsfixture-col--competitor--right img {
+  height: 100px;
+  padding: 0 10px;
+  object-fit: contain;
+}
+
+.competition__section-detailsfixture-col--competitor--left p,
+.competition__section-detailsfixture-col--competitor--right p {
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.competition__section-detailsfixture-col--competitor--center {
+  display: flex;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+.competition__section-detailsfixture-row--competition--left-bottom {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 11pt;
+  font-weight: 500;
+  text-transform: uppercase;
+  align-items: flex-end;
+}
+
+.competition__section-detailsfixture-col--competitor--center span {
+  color: #ffca05;
+  font-size: 80pt;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+.competition__section-detailsfixture-col--result {
+  text-align: right;
+}
+
+.competition__section-detailsfixture-col--result span,
+.btn-hide-toggle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-hide-toggle {
+  border-color: #ddd;
+  background-color: transparent;
+  color: #fff;
+  margin-left: 1.25rem;
+  margin-right: 1rem;
+  text-align: center;
+  transform: rotate(-180deg);
+}
+
+.btn-hide-toggle:hover {
+  background-color: #ddd;
+  color: #343a40;
+}
+
+@media screen and (max-width: 1024px) {
+  .competition__section-detailsfixture-row {
+    display: block;
+  }
+
+  .competition__section-detailsfixture-col--schedule {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .competition__section-detailsfixture-row--competitor-top {
+    justify-content: center;
+  }
+
+  .competition__section-detailsfixture-col--competitor--center span {
+    font-size: 5rem;
+  }
+
+  .competition__section-detailsfixture-row--competitor-bottom {
+    justify-content: center;
+  }
+
+  .competition__section-detailsfixture-col--result {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .competition__section-detailsfixtures {
+    display: block;
+  }
+
+  .competition__section-detailsfixture-row {
+    display: block;
+  }
+
+  .competition__section-detailsfixture-row--competitor-top {
+    flex-direction: column;
+  }
+
+  .competition__section-detailsfixture-col--competitor--left img,
+  .competition__section-detailsfixture-col--competitor--right img {
+    height: 43px;
+  }
+
+  .competition__section-detailsfixture-col--competitor--center span {
+    font-size: 2.75rem;
+  }
+
+  .competition__section-detailsfixture-row--competitor-bottom {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .competition__section-detailsfixture-col--competitor--center {
+    margin: 0;
+  }
+
+  .competition__section-detailsfixture-row--competition--left-bottom {
+    font-size: 9pt;
+  }
+
+  .competition__section-detailsfixture-col--result {
+    display: none;
+  }
+}

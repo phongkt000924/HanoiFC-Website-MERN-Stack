@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+/* Variables  */
+:root {
+  --textColorPrimary: #ffca05;
+  --textColorSecondary: #f9a51a;
+  --bgColorPrimary: #371973;
+  --bgColorSecondary: #411e8c;
+  --textColorWhite: #fff;
+
+  --container-width-lg: 80%;
+  --container-width-md: 70%;
+
+  --transition: all 500ms ease;
+}
+
+/* Default CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Signika Negative", sans-serif !important;
+  font-weight: 400;
+  background-color: var(--bgColorPrimary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  color: var(--textColorPrimary);
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1050px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  color: var(--textColorPrimary);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--textColorPrimary);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn {
+  color: var(--bgColorPrimary);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background: var(--textColorWhite);
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--textColorPrimary);
+  color: var(--bgColorPrimary);
+}
+
+.btn.lg {
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.btn.sm:hover {
+  background: var(--textColorWhite);
+  color: var(--bgColorPrimary);
+}
+
+.header {
+  margin-top: 5rem;
+  overflow: hidden;
+  border-bottom: 5px solid var(--textColorSecondary);
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.header__container-bg {
+  width: 100%;
+}
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .header {
+    height: fit-content;
+  }
+}
